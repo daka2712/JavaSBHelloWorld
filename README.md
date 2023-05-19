@@ -40,6 +40,14 @@ The `HelloWorldController` provides the following endpoints:
 
 You can use any HTTP client to test the endpoints. For example, you can use `curl` or Postman.
 
+curl http://localhost:8080/hello
+curl "http://localhost:8080/echo?name=JohnSpartan"
+curl -X POST -H "Content-Type: text/plain" -d "Hello" http://localhost:8080/post
+curl -X PUT -H "Content-Type: text/plain" -d "Hello" http://localhost:8080/put
+curl -X DELETE http://localhost:8080/delete
+curl -X PATCH -H "Content-Type: text/plain" -d "Hello" http://localhost:8080/patch
+
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
